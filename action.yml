@@ -8,7 +8,6 @@ runs:
       id: checkout
       uses: actions/checkout@v4
     - name: Use Node.js ${{ matrix.node-version }}
-    run: bash
       id: setup-node
       uses: actions/setup-node@v3
       with:
@@ -17,4 +16,3 @@ runs:
       id: install
       run: make install
       shell: bash
-
