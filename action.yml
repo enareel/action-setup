@@ -3,9 +3,6 @@ description: Setup workflow for the project and install all dependencies
 
 runs:
   using: composite
-  strategy:
-    matrix:
-      node-version: [18.x]
   steps:
     - name: Checkout repository
       id: checkout
